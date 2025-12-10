@@ -1,0 +1,8 @@
+# Screenshot Capture Template
+# For Training Use – Non-functional Template
+
+use post/windows/gather/screen_spy
+set SESSION <SESSION_ID>
+set COUNT <SCREENSHOT_COUNT>
+set DELAY <DELAY_SECONDS>
+run

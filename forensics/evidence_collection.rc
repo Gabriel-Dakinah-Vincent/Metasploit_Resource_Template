@@ -1,0 +1,18 @@
+# Evidence Collection Template
+# For Training Use – Non-functional Template
+
+use post/windows/gather/forensics/recovery_files
+set SESSION <SESSION_ID>
+set FILES *.doc,*.pdf,*.txt
+set SEARCH_PATH C:\\Users
+run
+
+use post/windows/gather/forensics/browser_history
+set SESSION <SESSION_ID>
+run
+
+use post/windows/gather/forensics/imager
+set SESSION <SESSION_ID>
+set DRIVE C:
+set OUTPUT /tmp/evidence.dd
+run

@@ -1,0 +1,18 @@
+# WordPress Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/http/wordpress_scanner
+set RHOSTS <TARGET_IP>
+set RPORT 80
+set TARGETURI /wordpress/
+set ENUMERATE_USERNAMES true
+set ENUMERATE_PLUGINS true
+set ENUMERATE_THEMES true
+run
+
+use auxiliary/scanner/http/wordpress_login_enum
+set RHOSTS <TARGET_IP>
+set TARGETURI /wordpress/
+set USERNAME admin
+set PASS_FILE /usr/share/wordlists/rockyou.txt
+run

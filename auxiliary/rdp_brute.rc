@@ -1,0 +1,10 @@
+# RDP Brute Force Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/rdp/rdp_scanner
+set RHOSTS <TARGET_RANGE>
+run
+
+use auxiliary/scanner/rdp/ms12_020_check
+set RHOSTS <TARGET_RANGE>
+run

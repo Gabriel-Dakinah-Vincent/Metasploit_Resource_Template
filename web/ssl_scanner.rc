@@ -1,0 +1,17 @@
+# SSL Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/ssl/ssl_version
+set RHOSTS <TARGET_RANGE>
+set RPORT <SSL_PORT>
+run
+
+use auxiliary/scanner/ssl/openssl_heartbleed
+set RHOSTS <TARGET_RANGE>
+set RPORT <SSL_PORT>
+run
+
+use auxiliary/scanner/ssl/ssl_weak_ciphers
+set RHOSTS <TARGET_RANGE>
+set RPORT <SSL_PORT>
+run

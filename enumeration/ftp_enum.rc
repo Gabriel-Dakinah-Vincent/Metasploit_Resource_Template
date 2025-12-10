@@ -1,0 +1,17 @@
+# FTP Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/ftp/ftp_version
+set RHOSTS <TARGET_RANGE>
+set RPORT 21
+run
+
+use auxiliary/scanner/ftp/anonymous
+set RHOSTS <TARGET_RANGE>
+run
+
+use auxiliary/scanner/ftp/ftp_login
+set RHOSTS <TARGET_IP>
+set USERNAME anonymous
+set PASSWORD anonymous@example.com
+run

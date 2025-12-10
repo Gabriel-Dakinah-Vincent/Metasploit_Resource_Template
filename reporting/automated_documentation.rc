@@ -1,0 +1,23 @@
+# Automated Documentation Template
+# For Training Use – Non-functional Template
+
+# Document current workspace
+workspace -v
+
+# Document active sessions
+sessions -l -v
+
+# Document running jobs
+jobs -l -v
+
+# Document loaded modules
+show advanced
+
+# Document global variables
+show options
+
+# Export complete database
+db_export -f pwdump /tmp/complete_dump.txt
+
+# Generate timeline
+notes -t

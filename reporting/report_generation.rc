@@ -1,0 +1,20 @@
+# Report Generation Template
+# For Training Use – Non-functional Template
+
+# Export database to XML
+db_export -f xml /tmp/pentest_results.xml
+
+# Generate host report
+hosts -o /tmp/hosts_report.txt
+
+# Generate services report
+services -o /tmp/services_report.txt
+
+# Generate vulnerabilities report
+vulns -o /tmp/vulns_report.txt
+
+# Generate credentials report
+creds -o /tmp/creds_report.txt
+
+# Generate notes report
+notes -o /tmp/notes_report.txt

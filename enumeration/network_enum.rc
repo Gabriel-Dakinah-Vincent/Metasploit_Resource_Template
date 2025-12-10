@@ -1,0 +1,17 @@
+# Network Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/discovery/arp_sweep
+set RHOSTS <TARGET_RANGE>
+set THREADS 50
+run
+
+use auxiliary/scanner/netbios/nbname
+set RHOSTS <TARGET_RANGE>
+set THREADS 50
+run
+
+use auxiliary/scanner/snmp/snmp_enum
+set RHOSTS <TARGET_RANGE>
+set COMMUNITY public
+run

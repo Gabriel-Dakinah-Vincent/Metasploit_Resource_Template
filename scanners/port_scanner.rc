@@ -1,0 +1,9 @@
+# Port Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/portscan/tcp
+set RHOSTS <TARGET_RANGE>
+set PORTS 1-1000
+set THREADS 50
+set TIMEOUT 1000
+run

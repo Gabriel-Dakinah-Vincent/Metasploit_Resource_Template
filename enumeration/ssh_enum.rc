@@ -1,0 +1,17 @@
+# SSH Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/ssh/ssh_version
+set RHOSTS <TARGET_RANGE>
+set RPORT 22
+run
+
+use auxiliary/scanner/ssh/ssh_enumusers
+set RHOSTS <TARGET_IP>
+set USER_FILE /usr/share/wordlists/usernames.txt
+run
+
+use auxiliary/scanner/ssh/ssh_identify_pubkeys
+set RHOSTS <TARGET_IP>
+set USERNAME root
+run

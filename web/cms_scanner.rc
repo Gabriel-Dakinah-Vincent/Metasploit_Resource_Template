@@ -1,0 +1,19 @@
+# CMS Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/http/wordpress_scanner
+set RHOSTS <TARGET_IP>
+set RPORT <HTTP_PORT>
+set TARGETURI <WORDPRESS_PATH>
+run
+
+use auxiliary/scanner/http/joomla_version
+set RHOSTS <TARGET_IP>
+set RPORT <HTTP_PORT>
+set TARGETURI <JOOMLA_PATH>
+run
+
+use auxiliary/scanner/http/drupal_views_user_enum
+set RHOSTS <TARGET_IP>
+set TARGETURI <DRUPAL_PATH>
+run

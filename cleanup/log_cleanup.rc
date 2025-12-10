@@ -1,0 +1,11 @@
+# Log Cleanup Template
+# For Training Use – Non-functional Template
+
+use post/windows/manage/delete_logs
+set SESSION <SESSION_ID>
+run
+
+use post/linux/manage/sshkey_persistence
+set SESSION <SESSION_ID>
+set CLEANUP true
+run

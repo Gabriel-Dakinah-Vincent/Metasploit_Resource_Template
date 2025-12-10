@@ -1,0 +1,7 @@
+# Database Setup Template
+# For Training Use – Non-functional Template
+
+db_status
+db_connect postgresql://msf:password@localhost/msf
+workspace -a pentest_project
+workspace pentest_project

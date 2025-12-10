@@ -1,0 +1,11 @@
+# Google Cloud Platform Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/cloud/gcp/enum_projects
+set ACCESS_TOKEN <ACCESS_TOKEN>
+run
+
+use auxiliary/cloud/gcp/enum_compute_instances
+set ACCESS_TOKEN <ACCESS_TOKEN>
+set PROJECT_ID <PROJECT_ID>
+run

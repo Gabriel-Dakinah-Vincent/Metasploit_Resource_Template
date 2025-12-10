@@ -1,0 +1,18 @@
+# System Information Gathering Template
+# For Training Use – Non-functional Template
+
+use post/multi/gather/env
+set SESSION 1
+run
+
+use post/windows/gather/checkvm
+set SESSION 1
+run
+
+use post/windows/gather/enum_applications
+set SESSION 1
+run
+
+use post/windows/gather/enum_logged_on_users
+set SESSION 1
+run

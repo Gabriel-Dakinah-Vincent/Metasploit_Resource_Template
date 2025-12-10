@@ -1,0 +1,13 @@
+# AWS Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/cloud/aws/enum_ec2
+set ACCESS_KEY_ID AKIAIOSFODNN7EXAMPLE
+set SECRET_ACCESS_KEY wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+set REGION us-east-1
+run
+
+use auxiliary/cloud/aws/enum_s3
+set ACCESS_KEY_ID AKIAIOSFODNN7EXAMPLE
+set SECRET_ACCESS_KEY wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+run

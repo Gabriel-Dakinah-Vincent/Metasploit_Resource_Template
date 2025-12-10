@@ -1,0 +1,6 @@
+# Session Cleanup Template
+# For Training Use – Non-functional Template
+
+sessions -K
+jobs -K
+unset all

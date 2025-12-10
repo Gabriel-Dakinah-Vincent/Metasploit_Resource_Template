@@ -1,0 +1,8 @@
+# Nmap Integration Template
+# For Training Use – Non-functional Template
+
+db_nmap -sS -sV -O <TARGET_RANGE>
+db_nmap -sU --top-ports 1000 <TARGET_RANGE>
+db_nmap --script vuln <TARGET_IP>
+hosts
+services

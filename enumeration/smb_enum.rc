@@ -1,0 +1,16 @@
+# SMB Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/smb/smb_enumshares
+set RHOSTS <TARGET_RANGE>
+set SMBUser <USERNAME>
+set SMBPass <PASSWORD>
+run
+
+use auxiliary/scanner/smb/smb_enumusers
+set RHOSTS <TARGET_RANGE>
+run
+
+use auxiliary/scanner/smb/smb2
+set RHOSTS <TARGET_RANGE>
+run

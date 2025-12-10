@@ -1,0 +1,13 @@
+# Joomla Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/http/joomla_version
+set RHOSTS <TARGET_IP>
+set RPORT 80
+set TARGETURI /joomla/
+run
+
+use auxiliary/scanner/http/joomla_plugins
+set RHOSTS <TARGET_IP>
+set TARGETURI /joomla/
+run

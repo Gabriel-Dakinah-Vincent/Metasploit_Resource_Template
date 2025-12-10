@@ -1,0 +1,8 @@
+# Workspace Setup Template
+# For Training Use – Non-functional Template
+
+workspace -a pentest_lab
+workspace pentest_lab
+db_nmap -sS -O <TARGET_RANGE>
+hosts
+services

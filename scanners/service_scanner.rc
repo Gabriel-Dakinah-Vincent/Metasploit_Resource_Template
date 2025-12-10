@@ -1,0 +1,17 @@
+# Service Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/discovery/udp_sweep
+set RHOSTS <TARGET_RANGE>
+set THREADS <THREAD_COUNT>
+run
+
+use auxiliary/scanner/smb/smb_version
+set RHOSTS <TARGET_RANGE>
+set THREADS <THREAD_COUNT>
+run
+
+use auxiliary/scanner/ssh/ssh_version
+set RHOSTS <TARGET_RANGE>
+set THREADS <THREAD_COUNT>
+run

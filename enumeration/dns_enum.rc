@@ -1,0 +1,12 @@
+# DNS Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/gather/dns_enum
+set DOMAIN <TARGET_DOMAIN>
+set NS <DNS_SERVER>
+run
+
+use auxiliary/gather/dns_bruteforce_enum
+set DOMAIN <TARGET_DOMAIN>
+set WORDLIST <DNS_WORDLIST>
+run

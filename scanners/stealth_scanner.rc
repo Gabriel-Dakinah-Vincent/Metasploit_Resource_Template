@@ -1,0 +1,14 @@
+# Stealth Scanner Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/portscan/syn
+set RHOSTS <TARGET_RANGE>
+set PORTS <PORT_RANGE>
+set DELAY <SCAN_DELAY>
+set THREADS 1
+run
+
+use auxiliary/scanner/discovery/udp_probe
+set RHOSTS <TARGET_RANGE>
+set THREADS 1
+run

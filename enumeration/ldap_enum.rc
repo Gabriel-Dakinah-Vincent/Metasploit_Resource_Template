@@ -1,0 +1,15 @@
+# LDAP Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/gather/ldap_query
+set RHOSTS <TARGET_IP>
+set RPORT <LDAP_PORT>
+set BASE_DN <BASE_DN>
+set FILTER <LDAP_FILTER>
+run
+
+use auxiliary/scanner/ldap/ldap_login
+set RHOSTS <TARGET_IP>
+set USERNAME <USERNAME>
+set PASSWORD <PASSWORD>
+run

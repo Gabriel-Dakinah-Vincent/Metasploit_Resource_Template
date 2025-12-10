@@ -1,0 +1,15 @@
+# Azure Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/cloud/azure/enum_subscriptions
+set CLIENT_ID <CLIENT_ID>
+set CLIENT_SECRET <CLIENT_SECRET>
+set TENANT_ID <TENANT_ID>
+run
+
+use auxiliary/cloud/azure/enum_resources
+set CLIENT_ID <CLIENT_ID>
+set CLIENT_SECRET <CLIENT_SECRET>
+set TENANT_ID <TENANT_ID>
+set SUBSCRIPTION_ID <SUBSCRIPTION_ID>
+run

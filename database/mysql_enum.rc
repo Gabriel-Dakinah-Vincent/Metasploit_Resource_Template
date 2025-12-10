@@ -1,0 +1,19 @@
+# MySQL Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/mysql/mysql_version
+set RHOSTS <TARGET_RANGE>
+set RPORT 3306
+run
+
+use auxiliary/scanner/mysql/mysql_login
+set RHOSTS <TARGET_IP>
+set USERNAME root
+set PASSWORD password123
+run
+
+use auxiliary/admin/mysql/mysql_enum
+set RHOSTS <TARGET_IP>
+set USERNAME root
+set PASSWORD password123
+run

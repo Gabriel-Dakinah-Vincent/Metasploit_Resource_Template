@@ -1,0 +1,18 @@
+# Registry Enumeration Template
+# For Training Use – Non-functional Template
+
+use post/windows/gather/enum_domain
+set SESSION <SESSION_ID>
+run
+
+use post/windows/gather/enum_patches
+set SESSION <SESSION_ID>
+run
+
+use post/windows/gather/enum_services
+set SESSION <SESSION_ID>
+run
+
+use post/windows/gather/enum_shares
+set SESSION <SESSION_ID>
+run

