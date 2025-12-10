@@ -310,6 +310,102 @@ set LHOST 192.168.1.50
 set LPORT 4444
 ```
 
+## Learning Resources
+
+### 📺 **Video Tutorials**
+
+#### **Metasploit Fundamentals**
+- [Metasploit for Beginners](https://www.youtube.com/watch?v=8lR27r8Y_ik) - Null Byte
+- [Complete Metasploit Course](https://www.youtube.com/watch?v=TCPyoWHy4eA) - The Cyber Mentor
+- [Metasploit Framework Tutorial](https://www.youtube.com/watch?v=adSQyRPqcuA) - HackerSploit
+
+#### **Exploit Development**
+- [Buffer Overflow Exploitation](https://www.youtube.com/watch?v=1S0aBV-Waeo) - LiveOverflow
+- [Windows Exploit Development](https://www.youtube.com/watch?v=qSnPayW6F7U) - Corelan Team
+- [Linux Privilege Escalation](https://www.youtube.com/watch?v=oW54AJfAtGU) - IppSec
+
+#### **Post-Exploitation**
+- [Meterpreter Fundamentals](https://www.youtube.com/watch?v=Lqehvpe_djs) - Null Byte
+- [Persistence Techniques](https://www.youtube.com/watch?v=6G0rDM4p8WU) - John Hammond
+- [Pivoting and Tunneling](https://www.youtube.com/watch?v=c0XiaNAkjJA) - The Cyber Mentor
+
+#### **Active Directory Attacks**
+- [Kerberoasting Explained](https://www.youtube.com/watch?v=PUyhlN-E5MU) - IppSec
+- [Golden Ticket Attacks](https://www.youtube.com/watch?v=pZSyGRjHNO4) - Black Hills Information Security
+- [DCSync Attack Demo](https://www.youtube.com/watch?v=GeqVuzfX8_w) - Pentester Academy
+
+### 📚 **Documentation & Guides**
+
+#### **Official Resources**
+- [Metasploit Documentation](https://docs.metasploit.com/) - Rapid7 Official Docs
+- [Metasploit Unleashed](https://www.offensive-security.com/metasploit-unleashed/) - Offensive Security Free Course
+- [Metasploit Framework Wiki](https://github.com/rapid7/metasploit-framework/wiki) - GitHub Wiki
+
+#### **Comprehensive Guides**
+- [Metasploit Cheat Sheet](https://www.sans.org/posters/metasploit/) - SANS Institute
+- [Penetration Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) - OWASP
+- [Red Team Field Manual](https://www.amazon.com/Rtfm-Red-Team-Field-Manual/dp/1494295504) - Ben Clark
+
+### 🌐 **Interactive Learning Platforms**
+
+#### **Hands-On Labs**
+- [TryHackMe Metasploit Room](https://tryhackme.com/room/rpmetasploit) - Interactive Metasploit Labs
+- [HackTheBox Academy](https://academy.hackthebox.com/course/preview/using-the-metasploit-framework) - Metasploit Course
+- [VulnHub](https://www.vulnhub.com/) - Vulnerable VMs for Practice
+
+#### **Capture The Flag (CTF)**
+- [OverTheWire](https://overthewire.org/wargames/) - Security Wargames
+- [PicoCTF](https://picoctf.org/) - Beginner-Friendly CTF
+- [CTFtime](https://ctftime.org/) - CTF Event Calendar
+
+### 📖 **Books & Publications**
+
+#### **Metasploit Specific**
+- "Metasploit: The Penetration Tester's Guide" - David Kennedy
+- "Mastering Metasploit" - Nipun Jaswal
+- "Metasploit Bootcamp" - Nipun Jaswal
+
+#### **General Penetration Testing**
+- "The Web Application Hacker's Handbook" - Dafydd Stuttard
+- "Black Hat Python" - Justin Seitz
+- "Gray Hat Hacking" - Allen Harper
+
+### 🔧 **Practice Environments**
+
+#### **Vulnerable Applications**
+- [Metasploitable 2](https://sourceforge.net/projects/metasploitable/) - Intentionally Vulnerable Linux
+- [DVWA](http://www.dvwa.co.uk/) - Damn Vulnerable Web Application
+- [WebGoat](https://owasp.org/www-project-webgoat/) - OWASP Learning Platform
+
+#### **Virtual Labs**
+- [Kali Linux](https://www.kali.org/) - Penetration Testing Distribution
+- [Parrot Security OS](https://www.parrotsec.org/) - Security-Focused OS
+- [BlackArch Linux](https://blackarch.org/) - Penetration Testing Distribution
+
+### 🎓 **Certification Paths**
+
+#### **Entry Level**
+- [CEH (Certified Ethical Hacker)](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) - EC-Council
+- [Security+](https://www.comptia.org/certifications/security) - CompTIA
+- [CySA+](https://www.comptia.org/certifications/cybersecurity-analyst) - CompTIA
+
+#### **Advanced**
+- [OSCP (Offensive Security Certified Professional)](https://www.offensive-security.com/pwk-oscp/) - Offensive Security
+- [CISSP](https://www.isc2.org/Certifications/CISSP) - (ISC)²
+- [GCIH](https://www.giac.org/certification/certified-incident-handler-gcih) - GIAC
+
+### 🛠️ **Additional Tools & Resources**
+
+#### **Complementary Tools**
+- [Nmap](https://nmap.org/book/) - Network Discovery
+- [Burp Suite](https://portswigger.net/burp/documentation) - Web Application Testing
+- [Wireshark](https://www.wireshark.org/docs/) - Network Protocol Analyzer
+
+#### **Community Resources**
+- [r/Metasploit](https://www.reddit.com/r/Metasploit/) - Reddit Community
+- [Metasploit Community](https://community.rapid7.com/) - Official Forum
+- [InfoSec Twitter](https://twitter.com/search?q=%23infosec) - Security Community
+
 ## Learning Objectives
 
 - Understand Metasploit RC file syntax
